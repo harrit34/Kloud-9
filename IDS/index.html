@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Live Intrusion Map </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">Live Intrusion Map</label>
+        <ul>
+            <li><a class="active" href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./faq.html">FAQ's</a></li>
+            <li><a href="./understanding.html">Understanding</a></li>
+            <li><a href="./Contact-us.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <video autoplay loop muted id="video-background">
+            <source src="newvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        
+          </video>
+        <style>
+            a:link {
+                color: rgb(253, 253, 253);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            
+            a:active {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+        <button class="btn"><a href="https://portal.azure.com/?Microsoft_Azure_Education_correlationId=a0dfeace9b0f4dd7bedeee5d9f794378#view/AppInsightsExtension/UsageNotebookBlade/ComponentId/%2Fsubscriptions%2Fad961b86-0c0e-4d9e-b819-d7c89aaec8eb%2Fresourcegroups%2Fhoneypotlab%2Fproviders%2Fmicrosoft.operationalinsights%2Fworkspaces%2Flaw-honeypot/ResourceIds~/%5B%5D/Type/sentinel/ConfigurationId/%2Fsubscriptions%2Fad961b86-0c0e-4d9e-b819-d7c89aaec8eb%2FresourceGroups%2Fhoneypotlab%2Fproviders%2FMicrosoft.Insights%2Fworkbooks%2F7a0979c2-b4ef-44ae-bb58-204939088023/Source/Sentinel/GalleryResourceType/Sentinel/ViewerMode~/null/Location/westus2">View Cyber Attacks Map</a></button>
+    </section>
+
+    <div id="clock" style="background-color: transparent;"></div>
+</body>
+
+<script>
+    function updateClock() {
+        var date = new Date();
+        var time = date.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(updateClock, 1000);
+</script>
+
+
+<style>
+    table {
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+    }
+    
+    td {
+        width: 25%;
+    }
+    
+    th {
+        width: 25%;
+    }
+</style>
+
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <table>
+                    <tr>
+                        <th>
+                            <h6>AI-DS Developer</h6>
+                        </th>
+                        <th>
+                            <h6>Creators</h6>
+                        </th>
+                        <th>
+                            <h6>Quick Links</h6>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Live Intrusion detection system is a</th>
+                        
+                        <td>
+                            <li><a href="Contact-us.html">Contact Us</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>website where you understand Cyber attacks</td>
+                        <td>
+                            <li><a href="">Tanvi Nevagi</a></li>
+                        </td>
+                        <td>
+                            <li><a href="">Privacy Policy</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>and where they originate from.</td>
+                        <td>
+                            <li><a href="">Harshal Dhabale</a></li>
+                        </td>
+                        <td>
+                            <li><a href="">Sitemap</a></li>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <br>
+                            <hr>
+                            <p class="copyright-text" align="center">Copyright &copy; 2017 All Rights Reserved by
+                                <a href="">Group 18</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+</footer>
+
+</html>

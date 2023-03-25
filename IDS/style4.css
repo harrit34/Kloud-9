@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background: rgb(63, 30, 30);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+.a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.contact-container {
+    max-width: 960px;
+    margin: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-left: 18%;
+}
+
+.form-container {
+    padding: 20px;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.form-container h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(25, 195, 247);
+}
+
+.form-container h1 {
+    font-size: 1.9rem;
+    font-weight: 1000;
+    margin-bottom: 0.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.form-container p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-bottom: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.contact-form {
+    display: grid;
+    row-gap: .9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    background: #581311;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-form .send-button:hover {
+    background: hsl(181, 92%, 10%);
+    transition: 0.3s all linear;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: linear-gradient(#ffffff);
+    padding: 15px 9%;
+    padding-bottom: 50px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid: 10px;
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container .box-container .box img {
+    height: 50px;
+}
+
+.container .box-container .box h7 {
+    color: #1a1a1a;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.container .box-container .box p {
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .maps {
+        margin-right: 20px;
+        padding-left: 20px;
+        width: 75%;
+    }
+}
